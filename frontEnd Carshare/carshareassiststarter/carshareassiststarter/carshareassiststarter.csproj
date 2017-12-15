@@ -220,6 +220,25 @@
     <Content Include="img\apple-touch-icon-114x114.png" />
     <Content Include="img\apple-touch-icon-72x72.png" />
     <Content Include="img\apple-touch-icon.png" />
+    <Content Include="img\app\01.jpg" />
+    <Content Include="img\app\02.jpg" />
+    <Content Include="img\app\03.jpg" />
+    <Content Include="img\bg\01.jpg" />
+    <Content Include="img\bg\02.jpg" />
+    <Content Include="img\bg\03.jpg" />
+    <Content Include="img\bg\04.jpg" />
+    <Content Include="img\bg\slider01.jpg" />
+    <Content Include="img\bg\slider02.jpg" />
+    <Content Include="img\bg\slider03.jpg" />
+    <Content Include="img\blog\01.jpg" />
+    <Content Include="img\blog\b01.jpg" />
+    <Content Include="img\blog\b02.jpg" />
+    <Content Include="img\blog\b03.jpg" />
+    <Content Include="img\blog\b04.jpg" />
+    <Content Include="img\blog\b05.jpg" />
+    <Content Include="img\blog\b06.jpg" />
+    <Content Include="img\blog\c01.jpg" />
+    <Content Include="img\blog\c02.jpg" />
     <Content Include="img\favicon.ico" />
     <Content Include="img\header2.png" />
     <Content Include="img\header4.png" />
@@ -228,17 +247,39 @@
     <Content Include="img\logo.jpg" />
     <Content Include="img\logo.png" />
     <Content Include="img\marker.png" />
+    <Content Include="img\portfolio\01%402x.jpg" />
+    <Content Include="img\portfolio\01.jpg" />
+    <Content Include="img\portfolio\02%402x.jpg" />
+    <Content Include="img\portfolio\02.jpg" />
+    <Content Include="img\portfolio\03%402x.jpg" />
+    <Content Include="img\portfolio\03.jpg" />
+    <Content Include="img\portfolio\04%402x.jpg" />
+    <Content Include="img\portfolio\04.jpg" />
+    <Content Include="img\portfolio\05%402x.jpg" />
+    <Content Include="img\portfolio\05.jpg" />
+    <Content Include="img\portfolio\06%402x.jpg" />
+    <Content Include="img\portfolio\06.jpg" />
+    <Content Include="img\portfolio\07%402x.jpg" />
+    <Content Include="img\portfolio\07.jpg" />
+    <Content Include="img\portfolio\08%402x.jpg" />
+    <Content Include="img\portfolio\08.jpg" />
     <Content Include="img\tab01.png" />
     <Content Include="img\tab02.png" />
     <Content Include="img\tab03.png" />
     <Content Include="img\tab04.png" />
     <Content Include="img\tab05.png" />
+    <Content Include="img\team\01.jpg" />
+    <Content Include="img\team\02.jpg" />
+    <Content Include="img\team\03.jpg" />
+    <Content Include="img\team\04.jpg" />
+    <Content Include="img\team\05.jpg" />
     <Content Include="js\bootstrap.js" />
     <Content Include="js\bootstrap.min.js" />
     <Content Include="ApplicationInsights.config">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
     <Content Include="fonts\glyphicons-halflings-regular.woff2" />
+    <Content Include="img\team\.DS_Store" />
     <None Include="Properties\PublishProfiles\CustomProfile.pubxml" />
     <None Include="js\jquery-1.10.2.intellisense.js" />
     <Content Include="js\jquery-1.10.2.js" />
@@ -288,7 +329,6 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-    <Folder Include="img\team\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="fonts\glyphicons-halflings-regular.woff" />
