@@ -6,7 +6,7 @@
    
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>@ViewBag.Title - My ASP.NET Application</title>
+        <title>@ViewBag.Title - Car Sharing </title>
         @Styles.Render("~/css/css")
         @Scripts.Render("~/bundles/modernizr")
 
@@ -83,8 +83,7 @@
                     <li><a href="#tf-about" class="scroll">About</a></li>
                     <li><a href="#tf-pricing" class="scroll">Pricing</a></li>
                     <li><a href="#tf-contact" class="scroll">Contact</a></li>
-                    <li><a href="#" class="scroll">LogIn</a></li>
-                    <li><a href="#" class="scroll">Register</a></li>
+                 
                 </ul>
                 @Html.Partial("_LoginPartial")
             </div><!-- /.navbar-collapse -->
@@ -207,6 +206,7 @@
     <!-- Team Section
     ================================================== -->
     <div id="tf-team">
+        
         <div class="container">
             <!-- container -->
             <div class="section-header">
@@ -214,53 +214,58 @@
                 <h5><em>Choose from our three different options</em></h5>
                 <div class="fancy"><span><img src="img/favicon.ico" alt="..."></span></div>
             </div>
-            <div id="team" class="owl-carousel owl-theme text-center">
+            <div id="team" class="row multi-columns-row">
+           
                 <!-- team carousel wrapper -->
-                <div class="item">
+                <div  class="col-sm-6 col-md-4 col-lg-4">
+                   
                     <!-- Team #1 -->
-                    <div class="hover-bg">
+                    <div >
+                       
                         <!-- Team Wrapper -->
                         <div class="hover-text off">
                             <!-- Hover Description -->
                             <p>The smart fortwo can fit in almost any parking spot and can maneuver around even the craziest downtown rush hour traffic jams.</p>
                         </div><!-- End Hover Description -->
-                        <img src="../img/team/05.jpg" alt="..." class="img-responsive"> <!-- Team Image -->
+                        <img src="img/team/05.jpg" alt="..." class="img-responsive"> <!-- Team Image -->
                         <div class="team-detail text-center">
                             <h3>smart fortwo</h3>
                             <p class="text-uppercase">Zippy and easy to park</p>
                         </div>
                     </div><!-- End Team Wrapper -->
                 </div><!-- End Team #1 -->
-                <div class="item">
+                <div  class="col-sm-6 col-md-4 col-lg-4">
                     <!-- Team #2 -->
-                    <div class="hover-bg">
+                    <div >
                         <!-- Team Wrapper -->
                         <div class="hover-text off">
                             <!-- Hover Description -->
                             <p>This small SUV has room for 5 people, plus added cargo capacity with a handy hatchback- and all car2go GLAs have 4MATIC all-wheel drive.</p>
                         </div> <!-- End Hover Description -->
-                        <img src="../img/team/03.jpg" alt="..." class="img-responsive"><!-- Team Image -->
+                        <img src="img/team/03.jpg" alt="..." class="img-responsive"><!-- Team Image -->
                         <div class="team-detail text-center">
                             <h3>Mercedes-Benz GLA</h3>
                             <p class="text-uppercase">Sporty and spacious</p>
                         </div>
                     </div> <!-- End Team Wrapper -->
                 </div><!-- End Team #2 -->
-                <div class="item">
+                <div  class="col-sm-6 col-md-4 col-lg-4" >
                     <!-- Team #3 -->
-                    <div class="hover-bg">
+                    <div >
                         <!-- Team Wrapper -->
                         <div class="hover-text off">
                             <!-- Hover Description -->
                             <p>There's room for 4 in this 4-door sedan. Cruise around town in a smooth, comfortable ride - even everyday errands seem a little more exciting.</p>
                         </div> <!-- End Hover Description -->
-                        <img src="../img/team/04.jpg" alt="..." class="img-responsive"><!-- Team Image -->
+                        <img src="img/team/04.jpg" alt="..." class="img-responsive"><!-- Team Image -->
                         <div class="team-detail text-center">
                             <h3>Mercedes-Benz CLA</h3>
                             <p class="text-uppercase">Stylish and fun</p>
                         </div>
                     </div><!-- End Team Wrapper -->
                 </div><!-- End Team #3 -->
+
+           
             </div> <!-- end team carousel wrapper -->
         </div> <!-- container -->
     </div>
@@ -349,7 +354,7 @@
             <div class="section-header">
                 <h2>Feel Free to <span class="highlight"><strong>Contact Us</strong></span></h2>
                 <h5><em>Always ready to help you in any way!</em></h5>
-                <div class="fancy"><span><img src="../img/favicon.ico" alt="..."></span></div>
+                <div class="fancy"><span><img src="img/favicon.ico" alt="..."></span></div>
             </div>
         </div><!-- end container -->
 
