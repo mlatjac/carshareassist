@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.26730.8
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CarSharing", "CarSharing\CarSharing.csproj", "{20F9D9FF-2B63-4372-9D85-63CD9A57657E}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{20F9D9FF-2B63-4372-9D85-63CD9A57657E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{20F9D9FF-2B63-4372-9D85-63CD9A57657E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{20F9D9FF-2B63-4372-9D85-63CD9A57657E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{20F9D9FF-2B63-4372-9D85-63CD9A57657E}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {73FE6B77-DBA4-4B1F-8D6E-A5A4F163A44F}
+	EndGlobalSection
+EndGlobal
