@@ -50,13 +50,7 @@ namespace CarSharing.Controllers
             else
             {
                 var memberInDB = _context.Members.Single(m => m.ID == member.ID);
-                /*
-                 * TryUpdateModel(customerinDB);
-                 * this is defualt method to update used by MS
-                 * It has major security flow.
-                 * 
-                 * */
-                //This manual way to it.
+         
                 memberInDB.FName = member.FName;
                 memberInDB.LName = member.LName;
                 memberInDB.Email = member.Email;
@@ -67,7 +61,14 @@ namespace CarSharing.Controllers
 
             _context.SaveChanges();
 
-            return RedirectToAction("New", "Members");
+            return RedirectToAction("List", "Members");
         }
+
+        public ActionResult List()
+        {
+            var customers = _context.Members.ToList();
+            return View(customers);
+        }
+
     }
 }
