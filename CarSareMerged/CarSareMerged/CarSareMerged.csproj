@@ -385,6 +385,9 @@
     <Content Include="Views\CarTypes\Details.cshtml" />
     <Content Include="Views\CarTypes\Edit.cshtml" />
     <Content Include="Views\CarTypes\Index.cshtml" />
+    <Content Include="Views\Members\Delete.cshtml" />
+    <Content Include="Views\Members\List.cshtml" />
+    <Content Include="Views\Members\MemberDetails.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
