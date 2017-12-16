@@ -185,7 +185,7 @@
                     {
                         <div class="col-md-4 nopadding">
                             <!-- Price table element -->
-                            <div class="panel panel-default price">
+                            <div class="panel panel-default price @(item.ShortName == "CSUV" ? "featured" : "" )">
                                 <!-- pricing table wrapper -->
                                 <div class="panel-heading">@item.FullName</div>
                                 <div class="panel-body">
@@ -203,66 +203,6 @@
                             </div><!-- end pricing table wrapper -->
                         </div><!-- end Price table element -->
                     }
-
-                    <div class="col-md-4 nopadding">
-                        <!-- Price table #1 -->
-                        <div class="panel panel-default price">
-                            <!-- pricing table wrapper -->
-                            <div class="panel-heading">smart fortwo</div>
-                            <div class="panel-body">
-                                <h1><sup>$</sup>0.41<small> /per minute </small></h1> <!-- Plan Price -->
-                            </div>
-
-                            <!-- Plan Feature Lists -->
-                            <ul class="list-unstyled">
-                                <li>$15 per hour</li>
-                                <li>$59 per day</li>
-                                <li>
-                                    <button type="button" class="btn btn-primary btn-block tf-btn">Get Started Now</button>
-                                </li>
-                            </ul><!-- end Plan Feature Lists -->
-                        </div><!-- end pricing table wrapper -->
-                    </div><!-- end Price table #1 -->
-
-                    <div class="col-md-4 nopadding">
-                        <!-- Price table #2 -->
-                        <div class="panel panel-default price featured">
-                            <!-- pricing table wrapper -->
-                            <div class="panel-heading">Mercedes-Benz GLA</div>
-                            <div class="panel-body">
-                                <h1><sup>$</sup>0.47<small> /per minute</small></h1><!-- Plan Price -->
-                            </div>
-
-                            <!-- Plan Feature Lists -->
-                            <ul class="list-unstyled">
-                                <li>$19 per hour</li>
-                                <li>$79 per day</li>
-                                <li>
-                                    <button type="button" class="btn btn-primary btn-block tf-btn color">Get Started Now</button>
-                                </li>
-                            </ul><!-- end Plan Feature Lists -->
-                        </div><!-- end pricing table wrapper -->
-                    </div><!-- end Price table #2 -->
-
-                    <div class="col-md-4 nopadding">
-                        <!-- Price table #3 -->
-                        <div class="panel panel-default price">
-                            <!-- pricing table wrapper -->
-                            <div class="panel-heading">Mercedes-Benz CLA</div>
-                            <div class="panel-body">
-                                <h1><sup>$</sup>0.47<small> /per minute</small></h1><!-- Plan Price -->
-                            </div>
-
-                            <!-- Plan Feature Lists -->
-                            <ul class="list-unstyled">
-                                <li>$19 per hour</li>
-                                <li>$79 per day</li>
-                                <li>
-                                    <button type="button" class="btn btn-primary btn-block tf-btn">Get Started Now</button>
-                                </li>
-                            </ul><!-- end Plan Feature Lists -->
-                        </div><!-- end pricing table wrapper -->
-                    </div><!-- end Price table #3 -->
 
                 </div> <!-- end nested row -->
             </div> <!-- end col 10 with offset 1 to centered -->
