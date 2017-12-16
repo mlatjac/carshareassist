@@ -4,6 +4,7 @@ using System.Linq;
 using System.Web;
 using System.Web.Mvc;
 using CarSareMerged.Models;
+using System.Data.Entity.Infrastructure;
 
 namespace CarSareMerged.Controllers
 {
@@ -20,8 +21,42 @@ namespace CarSareMerged.Controllers
         // GET: Members
         public ActionResult Index()
         {
-            return View();
+            var members = _context.Members.ToList();
+            return View("List", members);
+
         }
+
+        [HttpPost]
+        public ActionResult Index(string option, string search)
+        {
+            var members = _context.Members.ToList();
+            //if a user choose the radio button option as Subject  
+            switch (option)
+            {
+                case "FName":
+                    //Index action method will return a view with a member records based on what a user specify the value in textbox  
+                    members = _context.Members.Where(m => m.FName == search || search == null).ToList();
+                    break;
+                case "LName":
+                    members = _context.Members.Where(m => m.LName == search || search == null).ToList();
+                    break;
+                case "Email":
+                    members = _context.Members.Where(m => m.Email == search || search == null).ToList();
+                    break;
+                case "Phone":
+                    members = _context.Members.Where(m => m.Phone == search || search == null).ToList();
+                    break;
+            }
+            return View("List", members);
+
+        }
+
+        public ActionResult Details(int id)
+        {
+            var members = _context.Members.Find(id);
+            return View("MemberDetails", members);
+        }
+
 
         //Action from Building Form section
         public ActionResult New()
@@ -50,13 +85,7 @@ namespace CarSareMerged.Controllers
             else
             {
                 var memberInDB = _context.Members.Single(m => m.ID == member.ID);
-                /*
-                 * TryUpdateModel(customerinDB);
-                 * this is defualt method to update used by MS
-                 * It has major security flow.
-                 * 
-                 * */
-                //This manual way to it.
+
                 memberInDB.FName = member.FName;
                 memberInDB.LName = member.LName;
                 memberInDB.Email = member.Email;
@@ -67,8 +96,60 @@ namespace CarSareMerged.Controllers
 
             _context.SaveChanges();
 
-            return RedirectToAction("New", "Members");
+            return RedirectToAction("Index", "Members");
+        }
+
+        public ActionResult Edit(int id)
+        {
+            var memberInDB = _context.Members.SingleOrDefault(c => c.ID == id);
+
+            if (memberInDB == null)
+                return HttpNotFound();
+
+
+
+            return View("MembersForm", memberInDB);
+        }
+        //GET : Members/Delete/1
+
+        public ActionResult Delete(int? id, bool? saveChangesError = false)
+        {
+            if (id.HasValue)
+            {
+                var member = _context.Members.Find(id);
+
+                if (member == null)
+                    return HttpNotFound();
+
+                if (saveChangesError.GetValueOrDefault())
+                {
+                    ViewBag.ErrorMessage = "Delete Failed. Please try again or contact adminstrator";
+                }
+
+                return View(member);
+            }
+            return HttpNotFound();
+        }
+
+        //POST= : Members/Delete/1
+        [HttpPost]
+        public ActionResult Delete(int id)
+        {
+            try
+            {
+                var media = _context.Members.Find(id);
+                if (media == null)
+                    return View("Error");//new HttpStatusCodeResult(HttpStatusCode.BadRequest);
+                _context.Members.Remove(media);
+                _context.SaveChanges();
+            }
+            catch (RetryLimitExceededException)
+            {
+                return RedirectToAction("Delete", new { id = id, saveChangesError = true });
+            }
+
+            return RedirectToAction("Index");
         }
     }
-
 }
+      

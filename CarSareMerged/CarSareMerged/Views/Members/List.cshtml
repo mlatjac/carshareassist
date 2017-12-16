@@ -1,0 +1,43 @@
+﻿@model IEnumerable<CarSareMerged.Models.Member>
+@{
+    ViewBag.Title = "List";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Members List</h2>
+@using (Html.BeginForm("Index", "Home", FormMethod.Get))
+{
+    //the following are search options
+   <b> Search Option: </b>
+   @Html.RadioButton("option", "FName") <text>First Name</text>
+    @Html.RadioButton("option", "LName") <text> Last Name </text>
+    @Html.RadioButton("option", "Email")<text>Email</text>
+    @Html.RadioButton("option", "Phone")<text>Phone number</text>
+    @Html.TextBox("search") <input type = "submit" name = "submit" value = "Search" />
+
+    }
+
+    <table class="table table-dark table-hover">
+        <thread>
+            <tr>
+                <th>ID </th>
+                <th>Name</th>
+                <th>Email</th>
+                
+            </tr>
+        </thread>
+        <tbody>
+            @foreach (var member in Model)
+            {
+                <tr>
+                    <td>@member.ID</td>
+                    <td>@Html.ActionLink(member.FName + " " + member.LName, "Details", "Members", new { id = member.ID }, null)</td>
+                    <td>@member.Email</td>
+                             
+
+                </tr>
+            }
+        </tbody>
+    </table>
+
+
