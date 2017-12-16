@@ -1,0 +1,33 @@
+﻿@model SimpleCarERide.ViewModels.ListTypesViewModel
+
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>ListTypes</title>
+</head>
+<body>
+    <p>
+        Car Types we know about
+    </p>
+    <table class="table">
+        <tr>
+            <th></th>
+        </tr>
+    
+    @foreach (var item in Model.lstCarTypes) {
+        <tr>
+            <td>
+                @item.FullName
+            </td>
+        </tr>
+    }
+    
+    </table>
+</body>
+</html>
