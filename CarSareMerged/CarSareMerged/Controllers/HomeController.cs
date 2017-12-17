@@ -4,21 +4,31 @@ using System.Linq;
 using System.Web;
 using System.Web.Mvc;
 using CarSareMerged.Models;
+<<<<<<< HEAD
+=======
+using CarSareMerged.ViewModels;
+
+>>>>>>> 458104a9a893f02334f0b9637d64cd4d39a60d58
 
 namespace CarSareMerged.Controllers
 {
     public class HomeController : Controller
     {
+<<<<<<< HEAD
         private ApplicationDbContext _context;
 
         public HomeController()
         {
             _context = new ApplicationDbContext();
         }
+=======
+        private ApplicationDbContext db = new ApplicationDbContext();
+>>>>>>> 458104a9a893f02334f0b9637d64cd4d39a60d58
 
         public ActionResult Index()
         {
-            return View();
+            HomePageViewModel indexViewModel = new HomePageViewModel(db.CarTypes.ToList());
+            return View(indexViewModel);
         }
         public ActionResult Login()
         {
