@@ -27,10 +27,11 @@ namespace CarSareMerged.Controllers
         }
 
         [HttpPost]
+        [Route("Members/Index/{option}/{search}")]
         public ActionResult Index(string option, string search)
         {
             var members = _context.Members.ToList();
-            //if a user choose the radio button option as Subject  
+             
             switch (option)
             {
                 case "FName":
