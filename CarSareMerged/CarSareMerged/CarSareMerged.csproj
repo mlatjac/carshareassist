@@ -388,11 +388,11 @@
     <Content Include="Views\Members\Delete.cshtml" />
     <Content Include="Views\Members\List.cshtml" />
     <Content Include="Views\Members\MemberDetails.cshtml" />
-<<<<<<< HEAD
+
     <Content Include="Views\Home\Login.cshtml" />
-=======
+
     <Content Include="Views\Shared\_LayoutFluid.cshtml" />
->>>>>>> 458104a9a893f02334f0b9637d64cd4d39a60d58
+
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
