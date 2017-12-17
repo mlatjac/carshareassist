@@ -387,6 +387,7 @@
     <Content Include="Views\Members\Delete.cshtml" />
     <Content Include="Views\Members\List.cshtml" />
     <Content Include="Views\Members\MemberDetails.cshtml" />
+    <Content Include="Views\Home\Login.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

@@ -120,7 +120,6 @@ C:\Users\8547102\Source\repos\carshareassistant\CarSareMerged\CarSareMerged\bin\
 C:\Users\8547102\Source\repos\carshareassistant\CarSareMerged\CarSareMerged\obj\Debug\CarSareMerged.Migrations.InitialCreate.resources
 C:\Users\8547102\Source\repos\carshareassistant\CarSareMerged\CarSareMerged\obj\Debug\CarSareMerged.csproj.GenerateResource.Cache
 C:\Users\8547102\Source\repos\carshareassistant\CarSareMerged\CarSareMerged\obj\Debug\CarSareMerged.Migrations.Initial.resources
-
 C:\Users\Anonymous\Desktop\ASP.NET_Project\CarSareMerged\CarSareMerged\bin\ApplicationInsights.config
 C:\Users\Anonymous\Desktop\ASP.NET_Project\CarSareMerged\CarSareMerged\bin\roslyn\csc.exe
 C:\Users\Anonymous\Desktop\ASP.NET_Project\CarSareMerged\CarSareMerged\bin\roslyn\csc.exe.config
@@ -243,7 +242,6 @@ C:\Users\Anonymous\Desktop\ASP.NET_Project\CarSareMerged\CarSareMerged\obj\Debug
 C:\Users\Anonymous\Desktop\ASP.NET_Project\CarSareMerged\CarSareMerged\obj\Debug\CarSareMerged.csproj.CoreCompileInputs.cache
 C:\Users\Anonymous\Desktop\ASP.NET_Project\CarSareMerged\CarSareMerged\obj\Debug\CarSareMerged.dll
 C:\Users\Anonymous\Desktop\ASP.NET_Project\CarSareMerged\CarSareMerged\obj\Debug\CarSareMerged.pdb
-
 C:\Users\ipd\source\repos\eride\CarSareMerged\CarSareMerged\bin\ApplicationInsights.config
 C:\Users\ipd\source\repos\eride\CarSareMerged\CarSareMerged\bin\roslyn\csc.exe
 C:\Users\ipd\source\repos\eride\CarSareMerged\CarSareMerged\bin\roslyn\csc.exe.config
@@ -366,4 +364,3 @@ C:\Users\ipd\source\repos\eride\CarSareMerged\CarSareMerged\obj\Debug\CarSareMer
 C:\Users\ipd\source\repos\eride\CarSareMerged\CarSareMerged\obj\Debug\CarSareMerged.csproj.CoreCompileInputs.cache
 C:\Users\ipd\source\repos\eride\CarSareMerged\CarSareMerged\obj\Debug\CarSareMerged.dll
 C:\Users\ipd\source\repos\eride\CarSareMerged\CarSareMerged\obj\Debug\CarSareMerged.pdb
-
