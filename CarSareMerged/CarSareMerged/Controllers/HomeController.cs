@@ -18,7 +18,8 @@ namespace CarSareMerged.Controllers
         {
             _context = new ApplicationDbContext();
         }
-        
+
+        private ApplicationDbContext db = new ApplicationDbContext();
 
 
         public ActionResult Index()
