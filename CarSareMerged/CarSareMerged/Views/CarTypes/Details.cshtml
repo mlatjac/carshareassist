@@ -1,17 +1,9 @@
 ﻿@model CarSareMerged.Models.CarType
 
 @{
-    Layout = null;
+    ViewBag.Title = "Car Type Details";
+    Layout = "~/Views/Shared/_Layout.cshtml";
 }
-
-<!DOCTYPE html>
-
-<html>
-<head>
-    <meta name="viewport" content="width=device-width" />
-    <title>Details</title>
-</head>
-<body>
     <div>
         <h4>CarType</h4>
         <hr />
@@ -86,5 +78,3 @@
         @Html.ActionLink("Edit", "Edit", new { id = Model.Id }) |
         @Html.ActionLink("Back to List", "Index")
     </p>
-</body>
-</html>
