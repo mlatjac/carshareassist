@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
 using System.Linq;
 using System.Web;
 
@@ -34,5 +35,9 @@ namespace CarSareMerged.Models
 
         [Required]
         public string ImageReference { get; set; }
+
+        [ForeignKey("CarTypeID")]
+        public ICollection<Car> Cars { get; set; }
+
     }
 }

@@ -1,0 +1,66 @@
+﻿@model CarSareMerged.Models.Car
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Car</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.CarType.ShortName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.CarType.ShortName)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Name)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Name)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.currentPositionLat)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.currentPositionLat)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.currentPositionLon)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.currentPositionLon)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.currentOdometerReading)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.currentOdometerReading)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.currentFuelStatus)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.currentFuelStatus)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.ID }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

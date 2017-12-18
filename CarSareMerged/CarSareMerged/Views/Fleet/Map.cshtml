@@ -1,0 +1,47 @@
+﻿@model IEnumerable<CarSareMerged.Models.Car>
+
+@{
+    ViewBag.Title = "FleetMap";
+}
+
+<h2>Fleet Map</h2>
+
+<div id="fleetMap" style="height:250px"></div>
+<link rel="stylesheet" href="/css/ol.css" type="text/css">
+
+<script src="/js/OpenLayers.js"></script>
+<script type="text/javascript">
+    map = new OpenLayers.Map("fleetMap");
+    var mapnik = new OpenLayers.Layer.OSM();
+    map.addLayer(mapnik);
+
+    var lonLat = new OpenLayers.LonLat( @Model.ElementAt(0).currentPositionLon , @Model.ElementAt(0).currentPositionLat )
+          .transform(
+            new OpenLayers.Projection("EPSG:4326"), // transform from WGS 1984
+            map.getProjectionObject() // to Spherical Mercator Projection
+          );
+
+    var zoom=10;
+
+    var markers = new OpenLayers.Layer.Markers( "Markers" );
+    map.addLayer(markers);
+
+    markers.addMarker(new OpenLayers.Marker(lonLat));
+    </script>
+
+@foreach (var item in Model)
+{
+    <script>
+    var lonLat = new OpenLayers.LonLat(@item.currentPositionLon, @item.currentPositionLat)
+      .transform(
+        new OpenLayers.Projection("EPSG:4326"), // transform from WGS 1984
+        map.getProjectionObject() // to Spherical Mercator Projection
+      );
+    markers.addMarker(new OpenLayers.Marker(lonLat));
+</script>
+}
+<script>
+
+    map.setCenter(lonLat, zoom);
+
+</script>

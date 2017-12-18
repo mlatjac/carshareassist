@@ -364,3 +364,4 @@ C:\Users\ipd\source\repos\eride\CarSareMerged\CarSareMerged\obj\Debug\CarSareMer
 C:\Users\ipd\source\repos\eride\CarSareMerged\CarSareMerged\obj\Debug\CarSareMerged.csproj.CoreCompileInputs.cache
 C:\Users\ipd\source\repos\eride\CarSareMerged\CarSareMerged\obj\Debug\CarSareMerged.dll
 C:\Users\ipd\source\repos\eride\CarSareMerged\CarSareMerged\obj\Debug\CarSareMerged.pdb
+C:\Users\ipd\source\repos\eride\CarSareMerged\CarSareMerged\obj\Debug\CarSareMerged.Migrations.CarsAndCarTypesFK.resources

@@ -190,7 +190,9 @@
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="App_Start\Startup.Auth.cs" />
     <Compile Include="Controllers\AccountController.cs" />
+    <Compile Include="Controllers\CarsController.cs" />
     <Compile Include="Controllers\CarTypesController.cs" />
+    <Compile Include="Controllers\FleetController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\ManageController.cs" />
     <Compile Include="Controllers\MemberController.cs" />
@@ -204,6 +206,10 @@
     <Compile Include="Migrations\201712152039432_Initial.cs" />
     <Compile Include="Migrations\201712152039432_Initial.Designer.cs">
       <DependentUpon>201712152039432_Initial.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201712181539083_CarsAndCarTypesFK.cs" />
+    <Compile Include="Migrations\201712181539083_CarsAndCarTypesFK.Designer.cs">
+      <DependentUpon>201712181539083_CarsAndCarTypesFK.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
@@ -388,11 +394,14 @@
     <Content Include="Views\Members\Delete.cshtml" />
     <Content Include="Views\Members\List.cshtml" />
     <Content Include="Views\Members\MemberDetails.cshtml" />
-
     <Content Include="Views\Home\Login.cshtml" />
-
     <Content Include="Views\Shared\_LayoutFluid.cshtml" />
-
+    <Content Include="Views\Cars\Create.cshtml" />
+    <Content Include="Views\Cars\Delete.cshtml" />
+    <Content Include="Views\Cars\Details.cshtml" />
+    <Content Include="Views\Cars\Edit.cshtml" />
+    <Content Include="Views\Cars\Index.cshtml" />
+    <Content Include="Views\Fleet\Map.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
@@ -416,6 +425,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201712152039432_Initial.resx">
       <DependentUpon>201712152039432_Initial.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201712181539083_CarsAndCarTypesFK.resx">
+      <DependentUpon>201712181539083_CarsAndCarTypesFK.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
